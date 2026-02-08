@@ -1,0 +1,47 @@
+{
+	"Name": "Wake On LAN",
+	"Version": "0.1.0.0",
+	"Author": "Michael F. Weinberg",
+	"Actions": [
+		{
+			"Name": "Wake",
+			"UUID": "dev.luckymike.wake-on-lan.wake",
+			"Icon": "imgs/plugin/wol",
+			"Tooltip": "Sends a Wake On LAN packet.",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/plugin/wol",
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"Category": "Wake On LAN",
+	"CategoryIcon": "imgs/plugin/wol",
+	"CodePath": "bin/plugin.js",
+	"PropertyInspectorPath": "ui/property-inspector.html",
+	"Description": "Trigger Wake On LAN for a networked device.",
+	"Icon": "imgs/plugin/wol",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "6.9"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.15"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "disabled"
+	},
+	"UUID": "dev.luckymike.wake-on-lan"
+}
